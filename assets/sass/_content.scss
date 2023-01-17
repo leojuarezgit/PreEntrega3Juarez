@@ -7,8 +7,8 @@
 
 body{
 font-family: $family_font;
-color:$color_fuente;
-background-color: $color_principal;
+color: map-get ($color,fuente); //$color_fuente;
+background-color: map-get($color, principal);//$color_principal;
 
 }
 
@@ -46,16 +46,16 @@ height: 150px;
 
 
 .bg_color_principal{
-    background-color: $color_principal;
+    background-color: map-get($color,principal); //$color_principal;
 
 }
 
 .bg_color_card{
-    background-color: $color_secundario;
+    background-color: map-get($color,secundario);//$color_secundario;
 }
 
 .font_principal{
-    color:$color_fuente;
+    color: map-get($color,fuente);//$color_fuente;
 }
 
 .color_font_card{
@@ -165,7 +165,7 @@ row-gap: 2vh;
     text-align: center;
     width: 25vw;
     height: 10vh;
-    background-color:$color_secundario;
+    background-color: map-get($color,secundario);//$color_secundario;
     align-items: center;
     justify-content: space-around;
     padding-top: 10px ;

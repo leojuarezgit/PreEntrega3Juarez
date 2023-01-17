@@ -2,18 +2,23 @@
 
 
 //colores
+$color: {
+principal: #0d3b55,
+fuente: aliceblue,
+secundario: darkcyan
+};
+
 $color_principal:#0d3b55;
 $color_fuente: aliceblue;
 $color_secundario:darkcyan;
 
 
-//fuentes
+//fuente
 $family_font:'Asap', sans-serif;
 $font_size_titular: 200%;
 $font_size_texto:medium;
 
 //mixin animacion
-
 @mixin animacion ($velocidad) {
     position: relative;
     animation: movimiento $velocidad;
