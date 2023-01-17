@@ -1,17 +1,4 @@
-// // #estructura_grid{
-// //     display: grid;  
-    
-// //     grid-template-columns:  25% 25% 25% 25%;
-// //     grid-template-rows: auto auto auto;
-// //     grid-template-areas: 
-// //     "nav_bar nav_bar nav_bar nav_bar"
-// //     "area_left area_left area_right area_right"
-// //     "foot foot foot foot"
-// //     ;
-
-// // }
-
-
+//mobile first
 #estructura_grid{
     display: grid;
     grid-template-columns: 1fr;
