@@ -1,0 +1,250 @@
+//contenido general
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+font-family: $family_font;
+color:$color_fuente;
+background-color: $color_principal;
+
+}
+
+
+.logo{
+    grid-area: logo;
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.logo_subiza{
+width: 300px;
+height: 150px;
+
+}
+
+// .nav{
+//     grid-area: nav;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     align-items: center;
+   
+//     padding-right: 2vw;
+//     list-style: none; 
+//     column-gap: 1vw;
+
+// }
+
+
+.bg_color_principal{
+    background-color: $color_principal;
+
+}
+
+.bg_color_card{
+    background-color: $color_secundario;
+}
+
+.font_principal{
+    color:$color_fuente;
+}
+
+.color_font_card{
+    color:black
+}
+
+
+
+
+.nav_bar{
+    grid-area: nav_bar;
+}
+
+//nesting con sass
+.area_left{
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+row-gap: 2vh;
+
+    p{
+        font-size:large;
+        padding-left: 2%;
+        @include animacion (3s); 
+    }
+    h1{
+        font-size: $font_size_titular;
+        padding-left: 2%;
+        @include animacion (5s);
+    }
+
+    h2{
+        font-size: $font_size_texto;
+        padding-left: 2%;
+    }
+
+    .card_container{
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        row-gap: 5vh;
+
+
+    }
+
+    .servicio_izq{
+        width: 50vw;
+        height: 10vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+
+        .sub_guardia{
+            text-align: center;
+            font-size:small;
+        }
+
+    }
+
+}
+
+.area_right{
+
+    grid-area: area_right;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    row-gap: 5vh;
+    height: 60vh;
+    h2{
+        @include animacion (3s);
+    }
+
+    .servicio_izq{
+        width: 50vw;
+        height: 10vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+
+        .sub_guardia{
+            text-align: center;
+            font-size:small;
+        }
+
+    }
+}
+
+.foot{
+    margin-top: 8vh;
+    grid-area: foot;   
+    height: 20vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25vw;
+    height: 10vh;
+    background-color:$color_secundario;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    border-radius: 5%;
+}
+
+.redes_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+  
+}
+
+.icono_redes{
+    width: 30px;
+    height: 30px;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50vh;
+}
+
+
+.foot{
+padding-left: 20px;
+font-size: small;
+display: flex;
+align-items: center;
+
+}
+
+.foto{
+    width: 100px;
+    height: 100px;
+}
+
+.foto_nombre{
+font-size: small;
+}
+
+.foto_titulo{
+font-size: x-small;
+
+}
+
+.foto_puesto{
+font-size: x-small;
+
+}
+
+.elemento_organigrama{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+
+}
+
+.row_organigrama{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+
+}
+
+.contenedor_organigrama{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    row-gap: 5vh;
+
+}
