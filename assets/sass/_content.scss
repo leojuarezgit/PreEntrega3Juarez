@@ -5,6 +5,7 @@
     margin: 0;
 }
 
+//uso de variables y map
 body{
 font-family: $family_font;
 color: map-get($color,fuente); 
@@ -31,31 +32,19 @@ height: 150px;
 
 }
 
-// .nav{
-//     grid-area: nav;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     align-items: center;
-   
-//     padding-right: 2vw;
-//     list-style: none; 
-//     column-gap: 1vw;
-
-// }
 
 
 .bg_color_principal{
-    background-color: map-get($color,principal); //$color_principal;
+    background-color: map-get($color,principal); 
 
 }
 
 .bg_color_card{
-    background-color: map-get($color,secundario);//$color_secundario;
+    background-color: map-get($color,secundario);
 }
 
 .font_principal{
-    color: map-get($color,fuente);//$color_fuente;
+    color: map-get($color,fuente);
 }
 
 .color_font_card{
@@ -133,7 +122,7 @@ row-gap: 2vh;
     row-gap: 5vh;
     height: 60vh;
     h2{
-        @include animacion (3s);
+        @include animacion (3s);  //uso de maxin para animaciones de encabezados
     }
 
     .servicio_izq{
@@ -165,7 +154,7 @@ row-gap: 2vh;
     text-align: center;
     width: 25vw;
     height: 10vh;
-    background-color: map-get($color,secundario);//$color_secundario;
+    background-color: map-get($color,secundario);
     align-items: center;
     justify-content: space-around;
     padding-top: 10px ;
