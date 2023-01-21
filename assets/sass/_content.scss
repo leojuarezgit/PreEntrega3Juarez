@@ -61,7 +61,7 @@ height: 150px;
 
 //nesting con sass
 .area_left{
-height: 60vh;
+height: 30vh;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -121,7 +121,7 @@ row-gap: 2vh;
     justify-content:space-between;
     align-items: center;
     row-gap: 5vh;
-    height: 60vh;
+    height: 30vh;
     h2{
         @include animacion (3s);  //uso de maxin para animaciones de encabezados
     }
@@ -143,7 +143,20 @@ row-gap: 2vh;
     }
 }
 
+.subarea{
+    grid-area: subarea;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
+.servicio{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .foot{
     margin-top: 8vh;

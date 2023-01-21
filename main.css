@@ -55,12 +55,16 @@ body {
   color: black;
 }
 
+.carousel {
+  grid-area: carousel;
+}
+
 .nav_bar {
   grid-area: nav_bar;
 }
 
 .area_left {
-  height: 60vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,7 +118,7 @@ body {
   justify-content: space-between;
   align-items: center;
   row-gap: 5vh;
-  height: 60vh;
+  height: 30vh;
 }
 .area_right h2 {
   position: relative;
@@ -133,6 +137,21 @@ body {
 .area_right .servicio_izq .sub_guardia {
   text-align: center;
   font-size: small;
+}
+
+.subarea {
+  grid-area: subarea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .foot {
@@ -227,7 +246,8 @@ body {
 #estructura_grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "nav_bar" "area_left" "area_right" "foot";
+  grid-template-rows: 20vh auto 70vh 50vh 10vh 10vh;
+  grid-template-areas: "nav_bar" "carousel" "area_left" "area_right" "subarea" "foot";
 }
 
 /* utilizo este breakpoint porque coincide con el de bootstrap (para mostrar o no el menu hamburguesa) */
@@ -235,8 +255,8 @@ body {
   #estructura_grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "nav_bar nav_bar" "area_left area_right" "foot foot";
+    grid-template-rows: 20vh auto 70% auto 20vh;
+    grid-template-areas: "nav_bar nav_bar" "carousel carousel" "area_left area_right" "subarea subarea" "foot foot";
   }
   .area_left .servicio_izq {
     display: flex;

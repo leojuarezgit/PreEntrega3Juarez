@@ -2,11 +2,13 @@
 #estructura_grid{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 20vh auto 70vh 50vh 10vh 10vh;
     grid-template-areas:
     "nav_bar"
     "carousel"
     "area_left"
     "area_right"
+    "subarea"
     "foot";
 }
 
@@ -22,11 +24,12 @@
     #estructura_grid{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: 20vh auto 70% auto 20vh;
         grid-template-areas:
         "nav_bar nav_bar"
         "carousel carousel"
         "area_left area_right"
+        "subarea subarea"
         "foot foot";   
     }
 
