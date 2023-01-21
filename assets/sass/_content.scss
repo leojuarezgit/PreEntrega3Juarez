@@ -51,8 +51,9 @@ height: 150px;
     color:black
 }
 
-
-
+.carousel{
+    grid-area: carousel;
+}
 
 .nav_bar{
     grid-area: nav_bar;
@@ -141,6 +142,8 @@ row-gap: 2vh;
 
     }
 }
+
+
 
 .foot{
     margin-top: 8vh;
